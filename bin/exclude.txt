@@ -1,0 +1,9 @@
+log
+tmp
+test
+public/system
+vendor/bundle
+bin
+.bundle
+.DS_STORE
+*.sqlite3
