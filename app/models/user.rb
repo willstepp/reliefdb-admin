@@ -4,7 +4,7 @@ class User < ActiveRecord::Base
   has_and_belongs_to_many :organizations
   before_destroy :remove_organization_associations
 
-  devise :database_authenticatable, :registerable, :confirmable,
+  devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
   def role?(name)
